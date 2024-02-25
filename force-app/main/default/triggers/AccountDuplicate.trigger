@@ -36,7 +36,7 @@ trigger AccountDuplicate on Account (before insert)
 
 			{
 
-				acc.Name.addError('Name already Exist, you cannot create a new account');
+				acc.Name.addError('Name already Exist, you cannot create a new account.Please use the old account');
 
 			}
 
